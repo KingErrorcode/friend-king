@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/homescreen.dart';
 import 'Homepage.dart';
+import 'Membership.dart';
 
 
 class BottomTapBar extends StatefulWidget{
@@ -16,6 +17,7 @@ class _BottomTapBarState extends State<BottomTapBar> {
   final screen = [
     HomePage(),
     MenuScreen(),
+    MemberPage(),
   
   ];
 @override
