@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'homescreen.dart';
+import 'package:flutter_application_1/main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,24 +36,25 @@ class _SplashState extends State<Splash> {
       CupertinoPageRoute(builder: (ctx)=>HomeScreen())
     );
 
+
     });
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange,
+      backgroundColor: Colors.white,
       body: SizedBox(
         width: double.infinity,
         child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('images/Logomonke.png',width: 300,
+          Image.asset('images/logoptea.png',width: 300,
           ),
           SizedBox(
             height: 10,
           ),
-          SpinKitFoldingCube(
-          color: Colors.white,
+          SpinKitChasingDots(
+          color: Colors.black,
           size: 50,
           ),
         ],
