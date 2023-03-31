@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Bottom.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'homescreen.dart';
 import 'package:flutter_application_1/main.dart';
@@ -33,7 +34,7 @@ class _SplashState extends State<Splash> {
 
     Future.delayed(Duration(seconds: 3)).then((value){
     Navigator.of(context).pushReplacement(
-      CupertinoPageRoute(builder: (ctx)=>HomeScreen())
+      CupertinoPageRoute(builder: (ctx)=>BottomTapBar())
     );
 
 

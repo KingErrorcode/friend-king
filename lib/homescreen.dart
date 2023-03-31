@@ -6,8 +6,7 @@ void main() {
   runApp(const MyApp());
 }
 
-class HomeScreen extends StatelessWidget {
-  //สร้างข้อมูลรายการหนังสือ
+class MenuScreen extends StatelessWidget {
   List<Teamodel> drinkDetail = [
     Teamodel(drinkname: 'Thai Tea', size: 'S/M/L', price: 50),
     Teamodel(drinkname: 'fruit Tea', size: 'S/M/L', price: 50),
@@ -38,26 +37,7 @@ class HomeScreen extends StatelessWidget {
             subtitle: Text(bookList.size),
           );
         },
-      ),
-        bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Color.fromARGB(255, 240, 170, 65),
-          items:[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.group),
-            label: 'รายชื่อลูกค้า',
-          ),
-        ],
-      ),
-      
-      
+      ), 
     );
   }
 }
