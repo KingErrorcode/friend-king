@@ -9,9 +9,9 @@ void main() {
 class HomeScreen extends StatelessWidget {
   //สร้างข้อมูลรายการหนังสือ
   List<Teamodel> drinkDetail = [
-    Teamodel(drinkname: 'Thai Tea', size: 'S/M/L', price: 50/60/70),
-    Teamodel(drinkname: 'fruit Tea', size: 'S/M/L', price: 50/60/70),
-    Teamodel(drinkname: 'fruit Tea', size: 'S/M/L', price: 50/60/70),
+    Teamodel(drinkname: 'Thai Tea', size: 'S/M/L', price: 50),
+    Teamodel(drinkname: 'fruit Tea', size: 'S/M/L', price: 50),
+    Teamodel(drinkname: 'Triple Tea', size: 'S/M/L', price: 60),
 
   ];
 @override
@@ -20,9 +20,9 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("___MENU___"),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 211, 150, 60),
+        backgroundColor: Color.fromARGB(255, 240, 170, 65),
         elevation: 4,
-      ),
+      ),     
       body: ListView.builder(
         itemCount: drinkDetail.length,
         itemBuilder: (context, index) {
@@ -39,6 +39,24 @@ class HomeScreen extends StatelessWidget {
           );
         },
       ),
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Color.fromARGB(255, 240, 170, 65),
+          items:[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.group),
+            label: 'รายชื่อลูกค้า',
+          ),
+        ],
+      ),
+      
       
     );
   }
