@@ -1,4 +1,6 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+
 
 class MemberPage extends StatefulWidget {
   MemberPage({Key?key}): super(key: key);
@@ -16,7 +18,7 @@ class _MemberPageState extends State<MemberPage> {
         padding: const EdgeInsets.only(bottom: 25),
         child: Align(
           alignment: Alignment.bottomCenter,
-          child: Text('รายชื่อสมาชิก',style: TextStyle(
+          child: Text('เลือกสินค้า',style: TextStyle(
             fontSize:30,
             fontFamily: 'Oswald'
             )),
