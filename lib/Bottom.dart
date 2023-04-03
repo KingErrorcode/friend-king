@@ -19,9 +19,9 @@ class _BottomTapBarState extends State<BottomTapBar> {
   final screen = [
     HomePage(),
     MenuScreen(),
-    MemberPage()
-    //DatabasePage(),
-    
+    //MemberPage()
+    DatabasePage(),
+    //อาจารย์ลองเปลี่ยนเป็น DatabasePage แล้วปิดMemberPage ดูครับผมรันในโทรศัพท์ไม่ได้ครับ T_T
   
   ];
 @override
@@ -41,33 +41,9 @@ Widget build(BuildContext context){
       items: [
         Icon(Icons.home),
         Icon(Icons.menu),
-        Icon(Icons.shopping_cart),
+        Icon(Icons.group),
       ],
     ),
-    // body: screen[_index],
-    // bottomNavigationBar: BottomNavigationBar(
-    //     currentIndex: _index,
-    //     onTap: (value){
-    //       setState(() {
-    //         _index = value;
-    //       });
-    //     },
-    //       backgroundColor: Color.fromARGB(255, 240, 170, 65),
-    //       items:[
-    //       BottomNavigationBarItem(
-    //         icon: Icon(Icons.home),
-    //         label: 'Home',
-    //       ),
-    //       BottomNavigationBarItem(
-    //         icon: Icon(Icons.menu),
-    //         label: 'Menu',
-    //       ),
-    //       BottomNavigationBarItem(
-    //         icon: Icon(Icons.group),
-    //         label: 'รายชื่อลูกค้า',
-    //       ),
-    //     ],
-    //   ),
   );
 }
 }

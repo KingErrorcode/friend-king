@@ -25,7 +25,16 @@ class MenuScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 240, 170, 65),
         elevation: 4,
-      ),     
+      ), 
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.shopping_cart),
+        mini: true,
+        elevation: 0.0,
+        onPressed: (){},
+        tooltip: 'Shoping Cart',
+        foregroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 240, 170, 65),
+      ),    
       body: ListView.builder(
         itemCount: drinkDetail.length,
         itemBuilder: (context, index) {
